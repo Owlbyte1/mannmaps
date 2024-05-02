@@ -1,0 +1,36 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/workshop/weapons/c_models/c_tropic_bottle/c_tropic_bottle"
+	"$bumpmap" "models/workshop/weapons/c_models/c_tropic_bottle/c_tropic_bottle_phong" 
+	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
+       	 "$decal" 1
+	"$decalscale" "0.25"
+	"$decalsecondpass" "1"
+	"$vertexcolor" "1"
+	"$vertexalpha" "1"
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+
+	"$sheenPassEnabled" "1"
+
+	"$sheenmap" 		"cubemaps\cubemap_sheen001"
+	"$sheenmapmask" 		"Effects\AnimatedSheen\animatedsheen0"
+	"$sheenmaptint" 		"[ 1 1 1 ]"
+	"$sheenmapmaskframe" 	"0"
+	"$sheenindex" 		"0"
+
+	"Proxies"
+	{
+		"AnimatedWeaponSheen"
+		{
+			"animatedtexturevar" 		"$sheenmapmask"
+			"animatedtextureframenumvar" 	"$sheenmapmaskframe"
+			"animatedtextureframerate" 		"40"
+		}
+		"invis"
+		{
+		}
+	}
+}
+
